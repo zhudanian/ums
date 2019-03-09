@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ums-parent</artifactId>
+        <groupId>com.zte.ums</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ums-dao</artifactId>
+
+    <name>ums-dao</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+
+        <!--默认只将resources目录下的资源文件进行打包,不能将java目录下的资源文件进行打包-->
+        <!--设置让java目录下的资源文件进行打包-->
+        <resources>
+            <resource>
+                <!--指定一个目录-->
+                <directory>src/main/java</directory>
+                <includes>
+                    <!--该目录下任意子目录的任意.xml,.properties文件-->
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+
+                </includes>
+                <!--设置需要被过滤的文件,false表示不过滤-->
+                <filtering>false</filtering>
+
+            </resource>
+
+            <!--默认resources目录不在能够再被识别到，需要手动配置-->
+            <resource>
+                <!--指定一个目录-->
+                <directory>src/main/resources</directory>
+                <includes>
+                    <!--该目录下任意子目录的任意.xml,.properties文件-->
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+
+                </includes>
+                <!--设置需要被过滤的文件,false表示不过滤-->
+                <filtering>false</filtering>
+
+            </resource>
+
+        </resources>
+
+
+    </build>
+</project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ums-action/ums-action.iml" filepath="$PROJECT_DIR$/ums-action/ums-action.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ums-dao/ums-dao.iml" filepath="$PROJECT_DIR$/ums-dao/ums-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ums-parent.iml" filepath="$PROJECT_DIR$/ums-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ums-service/ums-service.iml" filepath="$PROJECT_DIR$/ums-service/ums-service.iml" />
+    </modules>
+  </component>
+</project>

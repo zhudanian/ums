@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ums-action:war">
+    <output-path>$PROJECT_DIR$/ums-action/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ums-action</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ums-action-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ums-action:war exploded" />
+    </root>
+  </artifact>
+</component>
